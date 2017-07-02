@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Магазин</title>
+    <link href='https://fonts.googleapis.com/css?family=Roboto:400,700&subset=latin,cyrillic' rel='stylesheet'
+          type='text/css'>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header class="main-header">
+    <div class="container">
+        <div class="menu-header">
+            <div class="header-logo">
+                <a href="index.html"><img src="img/header-nerds.png" width="140" height="62" alt="Nerd's"></a>
+            </div>
+            <nav class="header-nav">
+                <ul>
+                    <li><a href="index.html">Студия</a></li>
+                    <li><a href="#">Клиенты</a></li>
+                    <li class="active"><a href="catalog.html">Магазин</a></li>
+                    <li><a href="#">Контакты</a></li>
+                </ul>
+            </nav>
+            <div class="header-bag">
+                <a href="#"><span class="icon-basket"></span>Корзина</a>
+            </div>
+        </div>
+        <div class="header-title">
+            <h1>Добро пожаловать в магазин<br> готовых макетов</h1>
+        </div>
+    </div>
+</header>
+<main class="catalog-container">
+    <div class="filters">
+        <form action="/" method="get">
+            <h2>Стоимость:</h2>
+            <div class="range-filter">
+                <div class="range-controls">
+                    <div class="scale">
+                        <div class="bar"></div>
+                    </div>
+                    <div class="toggle toggle-min"></div>
+                    <div class="toggle toggle-max"></div>
+                </div>
+                <div class="price-controls">
+                    <label class="min-price">от
+                        <input name="min-price" type="text" value="0">
+                    </label>
+                    <label class="max-price">до
+                        <input name="max-price" type="text" value="15000">
+                    </label>
+                </div>
+            </div>
+            <div class="filter-grid">
+                <h2>Сетка:</h2>
+                <input type="radio" id="tr1" name="grid" checked>
+                <label for="tr1">Адаптивная</label>
+                <input type="radio" id="tr2" name="grid">
+                <label for="tr2">Фиксированная</label>
+                <input type="radio" id="tr3" name="grid">
+                <label for="tr3">Резиновая</label>
+            </div>
+            <div class="filter-features">
+                <h2>Особенности:</h2>
+                <input type="checkbox" id="tc1" name="feature" checked>
+                <label for="tc1">Слайдер</label>
+                <input type="checkbox" id="tc2" name="feature">
+                <label for="tc2">Блок преимуществ</label>
+                <input type="checkbox" id="tc3" name="feature" checked>
+                <label for="tc3">Новости</label>
+                <input type="checkbox" id="tc4" name="feature">
+                <label for="tc4">Галерея</label>
+                <input type="checkbox" id="tc5" name="feature">
+                <label for="tc5">Корзина</label>
+            </div>
+            <input type="submit" value="Показать">
+        </form>
+    </div>
+    <div class="main-column-right">
+        <div class="sorting-type">
+            <h3>Сортировать:</h3>
+            <ul class="sorting-type-selection">
+                <li><a class="active" href="#">По цене</a></li>
+                <li><a href="#">По типу</a></li>
+                <li><a href="#">По функционалу</a></li>
+            </ul>
+
+            <div class="sort-asc-dsc">
+                <a href="#"><span class="icon-up-dir active"></span></a>
+                <a href="#"><span class="icon-down-dir"></span></a>
+            </div>
+        </div>
+        <div class="result">
+            <div class="row row1">
+                <div class="result-item">
+                    <div class="header-item"><span></span><span></span><span></span></div>
+                    <div><img src="img/1-1.png" width="240" height="240" alt="site1"></div>
+                    <div class="result-item-popup">
+                        <h3 class="title">aviator</h3>
+                        <p>Однострочный макет<br>с авторским дизайном</p>
+                        <div class="popup-btn">
+                            <a class="btn" href="#">8000 р.</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="result-item">
+                    <div class="header-item"><span></span><span></span><span></span></div>
+                    <div><img src="img/1-2.png" width="240" height="240" alt="site2"></div>
+                    <div class="result-item-popup">
+                        <h3 class="title">sunset</h3>
+                        <p>Интернет-магазин<br>с личным кабинетом</p>
+                        <div class="popup-btn">
+                            <a class="btn" href="#">10000 р.</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row row2">
+                <div class="result-item">
+                    <div class="header-item"><span></span><span></span><span></span></div>
+                    <div><img src="img/2-1.png" width="240" height="240" alt="site3"></div>
+                    <div class="result-item-popup">
+                        <h3 class="title">forte</h3>
+                        <p>Однострочный макет<br>с авторским дизайном</p>
+                        <div class="popup-btn">
+                            <a class="btn" href="#">8000 р.</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="result-item">
+                    <div class="header-item"><span></span><span></span><span></span></div>
+                    <div><img src="img/2-2.png" width="240" height="240" alt="site4"></div>
+                    <div class="result-item-popup">
+                        <h3 class="title">modern organic</h3>
+                        <p>Однострочный макет<br>с авторским дизайном</p>
+                        <div class="popup-btn">
+                            <a class="btn" href="#">8000 р.</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row row3">
+                <div class="result-item">
+                    <div class="header-item"><span></span><span></span><span></span></div>
+                    <div><img src="img/3-1.png" width="240" height="240" alt="site5"></div>
+                    <div class="result-item-popup">
+                        <h3 class="title">avenue</h3>
+                        <p>Однострочный макет<br>с авторским дизайном</p>
+                        <div class="popup-btn">
+                            <a class="btn" href="#">8000 р.</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="result-item">
+                    <div class="header-item"><span></span><span></span><span></span></div>
+                    <div><img src="img/3-2.png" width="240" height="240" alt="site6"></div>
+                    <div class="result-item-popup">
+                        <h3 class="title">dovetail</h3>
+                        <p>Однострочный макет<br>с авторским дизайном</p>
+                        <div class="popup-btn">
+                            <a class="btn" href="#">8000 р.</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="pagination">
+            <a class="active" href="#">1</a>
+            <a href="#">2</a>
+            <a href="#">3</a>
+            <a class="next" href="#">Следующая</a>
+        </div>
+    </div>
+</main>
+<footer>
+    <div class="footer-map">
+        <div class="adress">
+            <div class="adress-top">
+                <h3 class="title">nёrds design studio</h3>
+                <p>191186, Санкт-Петербург,<br> ул. Б. Конюшенная, д. 19/8</p>
+                <p class="phone">тел. +7 (812) 275-75-75</p>
+            </div>
+            <div class="adress-btn">
+                <a class="btn" href="#">напишите нам</a>
+            </div>
+        </div>
+        <div class="map-logo"><img src="img/big-neards.png" width="92" height="42" alt="Nerd's"></div>
+    </div>
+    <div class="footer-container">
+        <div class="footer-social">
+            <a class="social-btn" href="#"><span class="icon-vk"></span></a>
+            <a class="social-btn" href="#"><span class="icon-facebook"></span></a>
+            <a class="social-btn" href="#"><span class="icon-instagramm"></span></a>
+        </div>
+        <div class="discounts">
+            <b class="title">Давайте дружить, это выгодно!</b>
+            <p>Скидка 10% для друзей из социальных сетей.</p>
+        </div>
+    </div>
+</footer>
+</body>
+</html>
